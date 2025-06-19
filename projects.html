@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vijoy Khatri - Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">VK</span>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link active">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="certifications.html" class="nav-link">Certifications</a>
+        </li>
+        <li class="nav-item">
+          <a href="resume.html" class="nav-link">Resume</a>
+        </li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Hero -->
+  <section class="projects-hero">
+    <div class="container">
+      <h1>My Projects</h1>
+      <p>A showcase of my technical projects, innovations, and contributions to AI, IoT, and software development</p>
+    </div>
+  </section>
+
+  <!-- Projects Filter -->
+  <section class="projects-filter">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+        <button class="filter-btn" data-filter="iot">IoT & Robotics</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="data-science">Data Science</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Projects -->
+  <section class="detailed-projects">
+    <div class="container">
+      <!-- Drone Project -->
+      <div class="detailed-project-card" data-category="iot">
+        <div class="project-header">
+          <div class="project-icon">
+            <i class="fas fa-helicopter"></i>
+          </div>
+          <div class="project-title-section">
+            <h2>Autonomous Drone Development</h2>
+            <p class="project-date">April 1, 2023 - April 19, 2023</p>
+            <p class="project-mentor">Mentor: Prof. Atul | Team Size: 1 (Solo Project)</p>
+          </div>
+        </div>
+        
+        <div class="project-content">
+          <div class="project-description">
+            <h3>Project Overview</h3>
+            <p>In this solo project, I developed a fully functional drone by designing, constructing, and testing its various components. The project involved setting up brushless motors, integrating flight control systems, and programming the drone for remote operation using Arduino.</p>
+            
+            <h3>Key Features</h3>
+            <ul>
+              <li>Custom-built drone frame and component assembly</li>
+              <li>Brushless motor integration for optimal performance</li>
+              <li>Arduino-based flight control system</li>
+              <li>Remote control operation with real-time response</li>
+              <li>Multiple sensor integration for flight stabilization</li>
+              <li>Safety systems and fail-safe mechanisms</li>
+            </ul>
+
+            <h3>Technical Implementation</h3>
+            <p>The drone utilizes various sensors including gyroscopes, accelerometers, and barometric pressure sensors to maintain stable flight. The flight control algorithm processes sensor data in real-time to adjust motor speeds and maintain stability during flight operations.</p>
+
+            <h3>Outcome</h3>
+            <p>Successfully demonstrated the drone's ability to fly autonomously and respond to remote commands effectively. The project showcased practical application of IoT, sensor integration, and real-time control systems.</p>
+          </div>
+
+          <div class="project-details">
+            <div class="tech-stack">
+              <h3>Technologies Used</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">Arduino</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Sensor Integration</span>
+                <span class="tech-tag">Microcontroller Programming</span>
+                <span class="tech-tag">Safety Systems</span>
+                <span class="tech-tag">IoT</span>
+                <span class="tech-tag">Hardware Design</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+              <a href="#" class="project-link"><i class="fas fa-video"></i> Watch Demo</a>
+              <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alcohol Detection Project -->
+      <div class="detailed-project-card" data-category="iot">
+        <div class="project-header">
+          <div class="project-icon">
+            <i class="fas fa-wine-bottle"></i>
+          </div>
+          <div class="project-title-section">
+            <h2>Alcohol Detection & Prevention System</h2>
+            <p class="project-date">April 1, 2022 - April 29, 2022</p>
+            <p class="project-mentor">Team Size: 4</p>
+          </div>
+        </div>
+        
+        <div class="project-content">
+          <div class="project-description">
+            <h3>Project Overview</h3>
+            <p>This project focused on developing a comprehensive system to detect alcohol levels in drivers and generate real-time alerts to improve road safety. The system integrates hardware sensors with intelligent software algorithms.</p>
+            
+            <h3>Key Features</h3>
+            <ul>
+              <li>MQ-3 alcohol sensor integration for precise detection</li>
+              <li>Real-time alcohol level monitoring</li>
+              <li>Automated alert system for safety violations</li>
+              <li>In-vehicle implementation ready design</li>
+              <li>Data logging and reporting capabilities</li>
+              <li>User-friendly interface for monitoring</li>
+            </ul>
+
+            <h3>Technical Implementation</h3>
+            <p>The system uses the MQ-3 alcohol sensor connected to an Arduino microcontroller to detect the presence of alcohol in a driver's breath. When alcohol levels exceed permissible limits, the system triggers immediate alerts and can integrate with vehicle systems for safety measures.</p>
+
+            <h3>Impact</h3>
+            <p>The functional prototype successfully detected alcohol levels and triggered safety alerts, demonstrating potential for real-world implementation in vehicle safety systems.</p>
+          </div>
+
+          <div class="project-details">
+            <div class="tech-stack">
+              <h3>Technologies Used</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">Arduino</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">MQ-3 Sensor</span>
+                <span class="tech-tag">Microcontroller Programming</span>
+                <span class="tech-tag">Sensor Calibration</span>
+                <span class="tech-tag">Safety Systems</span>
+                <span class="tech-tag">Hardware Integration</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+              <a href="#" class="project-link"><i class="fas fa-video"></i> Watch Demo</a>
+              <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate Verification System -->
+      <div class="detailed-project-card" data-category="web">
+        <div class="project-header">
+          <div class="project-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="project-title-section">
+            <h2>Automated Certificate Verification System</h2>
+            <p class="project-mentor">Mentor: Prof. Pranjali S.Bahalkar | Team Size: 4</p>
+          </div>
+        </div>
+        
+        <div class="project-content">
+          <div class="project-description">
+            <h3>Project Overview</h3>
+            <p>A comprehensive software solution designed to authenticate and validate certificates efficiently. The system features a Tkinter-based GUI that visually represents the verification process through a structured tree-like layout.</p>
+            
+            <h3>Key Features</h3>
+            <ul>
+              <li>Automated certificate validation process</li>
+              <li>Intuitive tree-structure visualization</li>
+              <li>Database integration for certificate storage</li>
+              <li>Fraud detection algorithms</li>
+              <li>Batch processing capabilities</li>
+              <li>Detailed verification reports</li>
+            </ul>
+
+            <h3>Applications</h3>
+            <p>Ideal for academic institutions, corporate hiring processes, and official document validation workflows. Reduces manual effort and ensures accuracy in certificate verification.</p>
+          </div>
+
+          <div class="project-details">
+            <div class="tech-stack">
+              <h3>Technologies Used</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Tkinter</span>
+                <span class="tech-tag">Database Management</span>
+                <span class="tech-tag">Data Parsing</span>
+                <span class="tech-tag">System Design</span>
+                <span class="tech-tag">GUI Development</span>
+                <span class="tech-tag">Algorithm Design</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+              <a href="#" class="project-link"><i class="fas fa-video"></i> Watch Demo</a>
+              <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SpaceX Data Science Project -->
+      <div class="detailed-project-card" data-category="data-science ai-ml">
+        <div class="project-header">
+          <div class="project-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="project-title-section">
+            <h2>SpaceX Falcon 9 Landing Prediction</h2>
+            <p class="project-mentor">IBM Applied Data Science Capstone Project</p>
+          </div>
+        </div>
+        
+        <div class="project-content">
+          <div class="project-description">
+            <h3>Project Overview</h3>
+            <p>Applied Data Science project analyzing SpaceX Falcon 9 rocket launches to predict first stage landing success. The analysis helps determine launch costs for competitive bidding against SpaceX.</p>
+            
+            <h3>Business Problem</h3>
+            <p>SpaceX advertises Falcon 9 rocket launches at $62 million, while other providers cost upward of $165 million. Much of the savings comes from SpaceX's ability to reuse the first stage. Predicting landing success helps determine actual launch costs.</p>
+
+            <h3>Methodology</h3>
+            <ul>
+              <li>Data collection from SpaceX API and web scraping</li>
+              <li>Exploratory data analysis and visualization</li>
+              <li>Feature engineering and data preprocessing</li>
+              <li>Machine learning model development</li>
+              <li>Model evaluation and comparison</li>
+              <li>Interactive dashboard creation</li>
+            </ul>
+
+            <h3>Key Insights</h3>
+            <p>Developed predictive models achieving high accuracy in determining first stage landing success, providing valuable insights for cost estimation and competitive analysis.</p>
+          </div>
+
+          <div class="project-details">
+            <div class="tech-stack">
+              <h3>Technologies Used</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Seaborn</span>
+                <span class="tech-tag">Plotly</span>
+                <span class="tech-tag">Jupyter Notebook</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Data Visualization</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+              <a href="#" class="project-link"><i class="fas fa-chart-line"></i> Interactive Dashboard</a>
+              <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Final Report</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student Management System -->
+      <div class="detailed-project-card" data-category="web">
+        <div class="project-header">
+          <div class="project-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="project-title-section">
+            <h2>Student Management System</h2>
+            <p class="project-mentor">Academic Project</p>
+          </div>
+        </div>
+        
+        <div class="project-content">
+          <div class="project-description">
+            <h3>Project Overview</h3>
+            <p>Comprehensive Java-based CRUD application with MySQL database integration, featuring multithreading for optimal performance and efficient student data management.</p>
+            
+            <h3>Key Features</h3>
+            <ul>
+              <li>Complete CRUD operations for student records</li>
+              <li>MySQL database integration</li>
+              <li>Multithreading for concurrent operations</li>
+              <li>User authentication and authorization</li>
+              <li>Search and filtering capabilities</li>
+              <li>Report generation functionality</li>
+            </ul>
+
+            <h3>Technical Implementation</h3>
+            <p>The system uses Java for the backend logic, MySQL for data persistence, and implements multithreading to handle concurrent user requests efficiently. The application follows MVC architecture for better code organization and maintainability.</p>
+          </div>
+
+          <div class="project-details">
+            <div class="tech-stack">
+              <h3>Technologies Used</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JDBC</span>
+                <span class="tech-tag">Multithreading</span>
+                <span class="tech-tag">MVC Architecture</span>
+                <span class="tech-tag">Database Design</span>
+                <span class="tech-tag">Software Engineering</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+              <a href="#" class="project-link"><i class="fas fa-video"></i> Watch Demo</a>
+              <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Documentation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anti-Money Laundering System -->
+      <div class="detailed-project-card" data-category="ai-ml data-science">
+        <div class="project-header">
+          <div class="project-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="project-title-section">
+            <h2>Anti-Money Laundering CKYC System</h2>
+            <p class="project-mentor">Advanced AI Project</p>
+          </div>
+        </div>
+        
+        <div class="project-content">
+          <div class="project-description">
+            <h3>Project Overview</h3>
+            <p>Advanced customer profiling system designed to detect fraudulent activities and money laundering patterns using sophisticated machine learning algorithms and data analysis techniques.</p>
+            
+            <h3>Key Features</h3>
+            <ul>
+              <li>Customer Know Your Customer (CKYC) profiling</li>
+              <li>Fraud pattern detection algorithms</li>
+              <li>Risk assessment and scoring</li>
+              <li>Real-time transaction monitoring</li>
+              <li>Compliance reporting and alerts</li>
+              <li>Machine learning-based anomaly detection</li>
+            </ul>
+
+            <h3>Technical Approach</h3>
+            <p>The system employs advanced machine learning techniques including anomaly detection, pattern recognition, and predictive modeling to identify suspicious financial activities and ensure regulatory compliance.</p>
+          </div>
+
+          <div class="project-details">
+            <div class="tech-stack">
+              <h3>Technologies Used</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Data Analysis</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Anomaly Detection</span>
+                <span class="tech-tag">Financial Analytics</span>
+                <span class="tech-tag">Risk Assessment</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+              <a href="#" class="project-link"><i class="fas fa-chart-line"></i> Analytics Dashboard</a>
+              <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Research Paper</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Vijoy Khatri. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://github.com/VijoyKhatri00" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/vijoy-khatri-37b6802a4" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:vijoykhatri3@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -5,36 +5,668 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vijoy Khatri | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Vijoy Khatri</h1>
-      <p>AI & Data Science Enthusiast | Developer</p>
-    </header>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm Vijoy, a passionate developer and AI & Data Science student. I love building smart solutions and experimenting with real-world tech projects.</p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Anti-Money Laundering CKYC</strong> – Customer profiling system to detect fraud.</li>
-        <li><strong>Drone Solo</strong> – Fully custom-built drone with remote control.</li>
-        <li><strong>Student Management System</strong> – Java CRUD project with MySQL and multithreading.</li>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">VK</span>
+      </div>
+      <ul class="nav-menu">        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#experience" class="nav-link">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
       </ul>
-    </section>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Vijoy Khatri</span>
+        </h1>
+        <p class="hero-subtitle">B.E. Artificial Intelligence & Data Science | Head of IoT & Robotics</p>
+        <p class="hero-description">
+          Motivated AI and Data Science student at Dr. DY Patil, skilled in Python, C++, and project development. Quick learner with a passion for problem-solving and innovation, eager to contribute to advancements in AI.
+        </p>
+        <div class="hero-location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Pune/Pimpri-Chinchwad Area, Maharashtra</span>
+        </div>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          <a href="resume.html" class="btn btn-tertiary">View Resume</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="floating-card">
+          <i class="fas fa-code"></i>
+          <span>Developer</span>
+        </div>
+        <div class="floating-card">
+          <i class="fas fa-brain"></i>
+          <span>AI Enthusiast</span>
+        </div>
+        <div class="floating-card">
+          <i class="fas fa-database"></i>
+          <span>Data Science</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-description">
+            Enthusiastic and motivated student at Dr. DY Patil pursuing a B.E. in Artificial Intelligence and Data Science. Currently in my 3rd year (2021-2025), I have developed strong proficiency in Python, C++, and various coding languages, with hands-on experience in project development.
+          </p>
+          <p class="about-description">
+            As the Head of IoT and Robotics at Dr. D.Y. Patil Institute of Technology, I have led the creation of autonomous drones, implementing AI algorithms for navigation. I'm a quick learner with a passion for problem-solving and a keen interest in innovative technologies, eager to apply academic knowledge to real-world projects.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Exhibitions Led</span>
+            </div>
+          </div>
+          <div class="education-info">
+            <h3>Current Education</h3>
+            <div class="education-item">
+              <h4>Bachelor of Engineering - Artificial Intelligence and Data Science</h4>
+              <p>Dr. D. Y. Patil Institute of Technology, Pimpri, Pune</p>
+              <span class="duration">2021 - 2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="image-placeholder">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="contact-quick">
+            <div class="contact-quick-item">
+              <i class="fas fa-envelope"></i>
+              <span>vijoykhatri3@gmail.com</span>
+            </div>
+            <div class="contact-quick-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 8263985484</span>
+            </div>
+            <div class="contact-quick-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Pune, Maharashtra</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:vijoykhatri3@gmail.com">vijoykhatri3@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/VijoyKhatri00" target="_blank">VijoyKhatri00</a></p>
-    </section>
-  </div>
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Experience & Leadership</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Head of IoT and Robotics</h3>
+            <h4>Dr. D.Y. Patil Institute of Technology</h4>
+            <span class="timeline-duration">2021 - Present (3+ years)</span>
+            <p>Led the creation of an autonomous drone at Dr. DY Patil University, implementing AI algorithms for navigation. Organized multiple project exhibitions showcasing IoT solutions, healthcare monitoring systems, and robotic innovations. Demonstrated strong project management, coding, and problem-solving skills while mentoring fellow students.</p>
+            <div class="timeline-skills">
+              <span class="skill-tag">Leadership</span>
+              <span class="skill-tag">Project Management</span>
+              <span class="skill-tag">AI Algorithms</span>
+              <span class="skill-tag">Team Building</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Full Stack Development Intern</h3>
+            <h4>Edunet Foundation - AICTE</h4>
+            <span class="timeline-duration">Dec 2023 - Jan 2024</span>
+            <p>Completed EY GDS-AICTE Internship Program, a unique 6-week learning experience in data analytics and full-stack web development. Gained hands-on experience with backend development, frontend development, cloud computing, data analytics, and data visualization.</p>
+            <div class="timeline-skills">
+              <span class="skill-tag">Full Stack Development</span>
+              <span class="skill-tag">Data Analytics</span>
+              <span class="skill-tag">Cloud Computing</span>
+              <span class="skill-tag">Data Visualization</span>
+            </div>
+          </div>
+        </div>
 
-  <!-- JavaScript temporarily disabled to avoid CSP errors -->
-  <!-- <script src="script.js"></script> -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Core Engineering Intern</h3>
+            <h4>Codsoft</h4>
+            <span class="timeline-duration">Dec 2023 - Jan 2024</span>
+            <p>Completed a 4-week virtual internship program focusing on core engineering principles and software development practices. Enhanced technical skills and gained industry exposure through hands-on projects and mentorship.</p>
+            <div class="timeline-skills">
+              <span class="skill-tag">Software Development</span>
+              <span class="skill-tag">Engineering Principles</span>
+              <span class="skill-tag">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-java"></i>
+              <span>Java</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-code"></i>
+              <span>C++</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-html5"></i>
+              <span>HTML</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>SQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>AI & Data Science</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fas fa-brain"></i>
+              <span>Machine Learning</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-chart-line"></i>
+              <span>Data Analysis</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-robot"></i>
+              <span>Deep Learning</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-eye"></i>
+              <span>Computer Vision</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-chart-bar"></i>
+              <span>Data Visualization</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-rocket"></i>
+              <span>Data Science</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Frameworks</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fas fa-laptop-code"></i>
+              <span>OpenCV</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-calculator"></i>
+              <span>MATLAB</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-desktop"></i>
+              <span>Tkinter</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-book"></i>
+              <span>Jupyter</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Hardware & IoT</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fas fa-microchip"></i>
+              <span>Arduino</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-raspberry-pi"></i>
+              <span>Raspberry Pi</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-wifi"></i>
+              <span>IoT</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-robot"></i>
+              <span>Robotics</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-cogs"></i>
+              <span>Sensors</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-helicopter"></i>
+              <span>Drone Tech</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Platforms & Systems</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-linux"></i>
+              <span>Linux</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-windows"></i>
+              <span>Windows</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-cloud"></i>
+              <span>Cloud Computing</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-server"></i>
+              <span>Full Stack Dev</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-code-branch"></i>
+              <span>Version Control</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-project-diagram"></i>
+              <span>Project Management</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Soft Skills</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fas fa-users"></i>
+              <span>Leadership</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-lightbulb"></i>
+              <span>Problem Solving</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-comments"></i>
+              <span>Communication</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-handshake"></i>
+              <span>Team Work</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-search"></i>
+              <span>Research</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Quick Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-helicopter"></i>
+          </div>
+          <div class="project-content">
+            <h3>Autonomous Drone Development</h3>
+            <p>Developed a fully functional drone by designing, constructing, and testing its various components. Integrated brushless motors, flight control systems, and programmed for remote operation using Arduino with various sensors for stable flight.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Arduino</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">Sensors</span>
+              <span class="tech-tag">IoT</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="project-content">
+            <h3>Anti-Money Laundering CKYC</h3>
+            <p>Advanced customer profiling system designed to detect fraudulent activities and money laundering patterns using machine learning algorithms and data analysis techniques.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Data Analysis</span>
+              <span class="tech-tag">AI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-wine-bottle"></i>
+          </div>
+          <div class="project-content">
+            <h3>Alcohol Detection & Prevention System</h3>
+            <p>Developed a system to detect alcohol levels in drivers using MQ-3 alcohol sensor integrated with Arduino microcontroller. Generates real-time alerts for road safety with in-vehicle implementation.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Arduino</span>
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">MQ-3 Sensor</span>
+              <span class="tech-tag">IoT</span>
+              <span class="tech-tag">Safety Systems</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="project-content">
+            <h3>Student Management System</h3>
+            <p>Comprehensive Java-based CRUD application with MySQL database integration, featuring multithreading for optimal performance and efficient data management.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Multithreading</span>
+              <span class="tech-tag">Database</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="project-content">
+            <h3>Automated Certificate Verification System</h3>
+            <p>Software solution with Tkinter-based GUI for authenticating and validating certificates efficiently. Features structured tree-like layout and automated validation processes.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tkinter</span>
+              <span class="tech-tag">Database Management</span>
+              <span class="tech-tag">System Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="project-content">
+            <h3>SpaceX Data Science Capstone</h3>
+            <p>Applied Data Science project analyzing SpaceX Falcon 9 rocket launches to predict first stage landing success, determining launch costs for competitive bidding analysis.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Data Science</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Data Visualization</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="certifications-section">
+        <h3>Certifications & Achievements</h3>
+        <div class="certifications-grid">
+          <div class="cert-item">
+            <i class="fab fa-ibm"></i>
+            <div>
+              <h4>Machine Learning with Python</h4>
+              <span>IBM - 91/100</span>
+            </div>
+          </div>
+          <div class="cert-item">
+            <i class="fab fa-ibm"></i>
+            <div>
+              <h4>Data Visualization with Python</h4>
+              <span>IBM - 91.45/100</span>
+            </div>
+          </div>
+          <div class="cert-item">
+            <i class="fab fa-ibm"></i>
+            <div>
+              <h4>Applied Data Science Capstone</h4>
+              <span>IBM - 86.83/100</span>
+            </div>
+          </div>
+          <div class="cert-item">
+            <i class="fab fa-ibm"></i>
+            <div>
+              <h4>Python Project for Data Science</h4>
+              <span>IBM - 93.33/100</span>
+            </div>
+          </div>
+          <div class="cert-item">
+            <i class="fab fa-ibm"></i>
+            <div>
+              <h4>Tools for Data Science</h4>
+              <span>IBM - 83.83/100</span>
+            </div>
+          </div>
+          <div class="cert-item">
+            <i class="fab fa-ibm"></i>
+            <div>
+              <h4>What is Data Science?</h4>
+              <span>IBM - 100/100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's Work Together</h3>
+          <p>I'm always interested in discussing new opportunities, innovative projects, or just having a chat about technology, AI, and robotics. Feel free to reach out!</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span class="contact-label">Primary Email</span>
+                <a href="mailto:vijoykhatri3@gmail.com">vijoykhatri3@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span class="contact-label">Alternate Email</span>
+                <a href="mailto:vijoykhatri23@gmail.com">vijoykhatri23@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <span class="contact-label">Phone</span>
+                <a href="tel:+918263985484">+91 8263985484</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <span class="contact-label">Alternate Phone</span>
+                <a href="tel:+919112806356">+91 9112806356</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <span class="contact-label">WhatsApp</span>
+                <a href="https://wa.me/918263985484" target="_blank">+91 8263985484</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/VijoyKhatri00" target="_blank">VijoyKhatri00</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/vijoy-khatri-37b6802a4" target="_blank">vijoy-khatri-37b6802a4</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="contact-label">Location</span>
+                <span>Pune, Maharashtra, India - 411031</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="personal-interests">
+            <h4>Personal Interests</h4>
+            <div class="interests-tags">
+              <span class="interest-tag"><i class="fas fa-swimmer"></i> Swimming</span>
+              <span class="interest-tag"><i class="fas fa-code"></i> Coding</span>
+              <span class="interest-tag"><i class="fas fa-book"></i> Reading</span>
+              <span class="interest-tag"><i class="fas fa-robot"></i> Robotics</span>
+              <span class="interest-tag"><i class="fas fa-brain"></i> AI Research</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Vijoy Khatri. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://github.com/VijoyKhatri00" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:vijoykhatri3@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
